@@ -27,6 +27,7 @@
     <div class="container">
         <form>
             <label for="assunto">Assunto:</label>
+            <br>
             <select name="assunto" id="assunto">
                 <option value="Elogio">Elogio</option>
                 <option value="Sugestão">Sugestão</option>
@@ -35,20 +36,32 @@
             </select>
             <br>
             <label for="Nome">Nome Completo:</label>
+            <br>
             <input type="text" id="name" name="name" placeholder="Insira seu nome">
             <br>
             <label for="Email">Email para contato:</label>
+            <br>
             <input type="text" id="email" name="email" placeholder="Insira seu Email">
             <br>
             <label for="Número">Número para contato:</label>
+            <br>
             <input type="tel" id="numero" name="numero" placeholder="Insira seu Número">
             <br>
-            <label for="Mensagem">Mensagem:</label> 
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
+            <label for="Mensagem">Mensagem:</label>
+            <br> 
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..." ></textarea>
+            <br><br>
+            <input type="submit" id="Enviar" value="Enviar">
         </form>
 
     </div>
+    <script>
+        document.getElementById('Enviar').onclick = function(){
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('numero').value = '';
+            document.getElementById('mensagem').value = '';
+        }
+    </script>
 </body>
 </html>
