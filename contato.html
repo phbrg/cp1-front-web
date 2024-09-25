@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Document</title>
 </head>
@@ -27,34 +28,33 @@
     <div class="container">
         <form>
             <label for="assunto">Assunto:</label>
-            <br>
+            
             <select name="assunto" id="assunto">
                 <option value="Elogio">Elogio</option>
                 <option value="Sugestão">Sugestão</option>
                 <option value="Reclamação">Reclamação</option>
                 <option value="Duvida">Dúvida</option>
             </select>
-            <br>
+
             <label for="Nome">Nome Completo:</label>
-            <br>
             <input type="text" id="name" name="name" placeholder="Insira seu nome">
-            <br>
+            
             <label for="Email">Email para contato:</label>
-            <br>
             <input type="text" id="email" name="email" placeholder="Insira seu Email">
-            <br>
+            
             <label for="Número">Número para contato:</label>
-            <br>
             <input type="tel" id="numero" name="numero" placeholder="Insira seu Número">
-            <br>
+            
             <label for="Mensagem">Mensagem:</label>
-            <br> 
-            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..." ></textarea>
-            <br><br>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..." maxlength="500"></textarea>
+            
             <input type="submit" id="Enviar" value="Enviar">
         </form>
 
     </div>
+    <a href="https://www.instagram.com/projeto.pacotinhodeamor/?igsh=Y2Zicjc5bG16NDIw" target="_blank" class="fa fa-instagram fa-2x"></a>
+    <a href="https://api.whatsapp.com/send?phone=5511994896555&text=Olá!%20Vi%20o/a%20Princesa%20no%20Amigo%20Não%20se%20Compra%20e%20gostaria%20de%20saber%20como%20faço%20para%20adotar!" target="_blank" class="fa fa-whatsapp fa-2x"></a>
+    <a href="https://www.facebook.com/people/Projeto-Pacotinho-de-Amor/100090674193671/?sk=about" target="_blank" class="fa fa-facebook fa-2x"></a>
     <script>
         document.getElementById('Enviar').onclick = function(){
             document.getElementById('name').value = '';

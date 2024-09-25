@@ -1,15 +1,14 @@
-html {
-    min-width: 550px;
-    position: relative;
-    }
-
 body{
     background-color: #EDEDED;
+}
+form{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 5px;
 }
 header{
+    position: relative;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,8 +17,8 @@ header{
     border-radius: 0 25px 0 25px;
 }
 input[type=text]{
-    width: 300px;
-    height: 50px;
+    width: 400px;
+    height: 60px;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -27,8 +26,8 @@ input[type=text]{
 }
 
 select{
-    width: 300px;
-    height: 50px;
+    width: 400px;
+    height: 60px;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -36,24 +35,25 @@ select{
 }
 
 input[type=tel]{
-    width: 300px;
-    height: 50px;
+    width: 400px;
+    height: 60px;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
 }
 textarea {
-    width: 300px;
-    height: 50px;
+    width: 400px;
+    height: 120px;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
+    resize: none;
 }
 
 input[type=submit]{
-    background-color: rgb(217, 87, 243);
+    background-color: #FEF977;
     border-radius: 6px;
     border:none;
     padding: 8px 12px;
@@ -61,22 +61,47 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-    background-color: rgb(208, 114, 237);
-    transform: scale(1.1);
+    background-color: #fffdc2;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
 .container {
+    position: relative;
+    z-index: 2;
     border-radius: 5px;
-    background-color: #a0a0a0;
+    background-color: #BA8FBA;
     padding: 20px;
     width: max-content;
     margin: 0 auto;
-    /*transform: scale(1.3);*/
-    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #603A75;
+    box-shadow: 2px 2px #5d5d5d;
 
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
 
+}
+.fa-instagram{
+    background: #125688;
+    color:white;
+}
+.fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    width: 30px
+  }
+.fa-whatsapp{
+    background: #0cbb00;
+    color:white;
+}
+.fa-facebook{
+    background: #0800ec;
+    color:white;
 }
