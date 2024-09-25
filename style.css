@@ -1,0 +1,10 @@
+body{
+    background-color: #EDEDED;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #a0a0a0;
+    padding: 20px;
+    height: 250px;
+}

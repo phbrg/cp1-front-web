@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logonavbar">
+            <a href="index.html"></a>
+        </div>
+
+        <div class="namenavbar">
+            <h1>Projeto Pacotinho de Amor</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Animais</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <div class="container">
+        <form>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="Elogio">Elogio</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Duvida">Dúvida</option>
+            </select>
+            <br>
+            <label for="Nome">Nome Completo:</label>
+            <input type="text" id="name" name="name" placeholder="Insira seu nome">
+            <br>
+            <label for="Email">Email para contato:</label>
+            <input type="text" id="email" name="email" placeholder="Insira seu Email">
+            <br>
+            <label for="Número">Número para contato:</label>
+            <input type="tel" id="numero" name="numero" placeholder="Insira seu Número">
+            <br>
+            <label for="Mensagem">Mensagem:</label> 
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </div>
+</body>
+</html>
