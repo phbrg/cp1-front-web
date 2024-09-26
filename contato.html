@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pacotinho de Amor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="home.html">
+            <img src="images/logo.jpeg" alt="logo projeto pacotinho de amor">
+            <p>Projeto Pacotinho de Amor</p>
+        </a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="adocao.html">Animais</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <form>
+            <label for="assunto">Assunto:</label>
+            
+            <select name="assunto" id="assunto" style="width: 100%; height: 80px">
+                <option value="Elogio">Elogio</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Duvida">Dúvida</option>
+            </select>
+
+            <label for="Nome">Nome Completo:</label>
+            <input type="text" id="name" name="name" placeholder="Insira seu nome">
+            
+            <label for="Email">Email para contato:</label>
+            <input type="text" id="email" name="email" placeholder="Insira seu Email">
+            
+            <label for="Número">Número para contato:</label>
+            <input type="tel" id="numero" name="numero" placeholder="Insira seu Número">
+            
+            <label for="Mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..." maxlength="500" style="font-family: Helvetica; height: 125px;"></textarea>
+            
+            <input type="submit" id="Enviar" value="Enviar">
+        </form>
+
+    </div>
+    <div class="container-img"></div>
+        <img src="C:\Users\fsplp\OneDrive\Documentos\GitHub\cp1-front-web\background.png" class="background-image">
+        <label for="titulo" class="titulo">Fale conosco!</label>
+        <label for="descrição" class="descrição">Sua opinião nos ajuda a fazer um trabalho cada vez melhor</label>
+    </div>
+    <div class="icones">
+        <a href="https://www.instagram.com/projeto.pacotinhodeamor/?igsh=Y2Zicjc5bG16NDIw" target="_blank" class="fa fa-instagram fa-2x"></a>
+        <a href="https://api.whatsapp.com/send?phone=5511994896555&text=Olá!%20Vi%20o/a%20Princesa%20no%20Amigo%20Não%20se%20Compra%20e%20gostaria%20de%20saber%20como%20faço%20para%20adotar!" target="_blank" class="fa fa-whatsapp fa-2x"></a>
+        <a href="https://www.facebook.com/people/Projeto-Pacotinho-de-Amor/100090674193671/?sk=about" target="_blank" class="fa fa-facebook fa-2x"></a>
+    </div>
+    <footer>
+        <p class="logo">Projeto Pacotinho de Amor 💜</p>
+        <p class="copy">Copyright 2024 © - Projeto Pacotinho de Amor</p>
+    </footer>
+</body>
+</html>
