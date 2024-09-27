@@ -13,7 +13,7 @@
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a {
+h1, h2, h3, h4, h5, h6, p, span, a, li, label {
   color: var(--text);
   text-decoration: none;
   letter-spacing: 0.5px;
@@ -178,7 +178,7 @@ footer {
 .sobre {
     display: flex;
     align-items: start;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     padding: 1vw;
     width: 100vw;
@@ -243,10 +243,157 @@ footer {
                 font-size: 1vw;
                 font-weight: 400;
                 color: #fff;
-                
+                padding: 0 0.8vw;
+
                 & span {
                     color: var(--yellow);
                 }
+            }
+        }
+    }
+}
+
+/* adocao */
+.adocao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--lpurple);
+
+    & .title {
+        font-size: 2vw;
+        color: var(--yellow);
+    }
+
+    & .animals {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+
+        & .box {
+            margin: 1vw 1vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: white;
+            border: 2px solid rgb(218, 218, 218);
+            padding: 1vw;
+            min-width: 30vw;
+            min-height: 40vh;
+            border-radius: 15px;
+
+            & img {
+                height: 200px;
+            }
+
+            & h1 {
+                color: var(--purple);
+            }
+
+            & div {
+                & p {
+                    font-size: 0.9vw;
+                    font-weight: 500;
+
+                    & span {
+                        color: var(--purple);
+                    }
+                }
+            }
+        }
+    }
+
+    & ol {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        & h1 {
+            font-size: 2vw;
+            color: var(--yellow);
+        }
+
+        & li {
+            color: #fff;
+            font-size: 1vw;
+            font-weight: 450;
+
+            &::marker {
+                color: var(--yellow);
+            }
+        }
+    }
+}
+
+/* contato */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    width: 100vw;
+    height: 100vh;
+    background: var(--lpurple);
+
+    & * {
+        margin: 0.5vh 0;
+    }
+
+    & label {
+        font-size: 1vw;
+        font-weight: 500;
+        width: 29%;
+        color: var(--yellow);
+    }
+
+    & input, textarea, select {
+        width: 30%;
+        font-size: 1vw;
+        padding: 0.5vw;
+        border-radius: 7px;
+        border: 2px solid rgb(218, 218, 218);
+
+        &:focus {
+            border: 2px solid var(--yellow);
+        }
+    }
+
+    & button {
+        cursor: pointer;
+        width: 30%;
+        font-size: 1vw;
+        font-weight: 500;
+        padding: 0.8vw 0;
+        border-radius: 7px;
+        background-color: var(--yellow);
+
+        &:hover {
+            filter: brightness(120%);
+        }
+
+        &:active {
+            transform: scale(0.99);
+        }
+    }
+
+    & .links{
+        & a {
+            padding: 1vw;
+            font-size: 1vw;
+            font-weight: 500;
+
+            &:hover {
+                color: var(--yellow);
             }
         }
     }
