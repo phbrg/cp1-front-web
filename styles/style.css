@@ -1,3 +1,4 @@
+/* nao esta responsivo para celular por pura preguiça */
 /* general */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
 
@@ -208,6 +209,47 @@ footer {
         }
     }
 
+    & .help {
+
+        & h1 {
+            font-size: 2vw;
+            color: var(--yellow);
+        }
+
+        & p {
+            font-size: 1vw;
+            font-weight: 400;
+            border-left: 3px solid var(--yellow);
+            padding: 0 0.8vw;
+            color: #fff;
+
+            & span {
+                color: var(--yellow);
+            }
+        }
+
+        & ol {
+            & h1 {
+                font-size: 2vw;
+                color: var(--yellow);
+            }
+    
+            & li {
+                color: #fff;
+                font-size: 1vw;
+                font-weight: 400;
+    
+                & span {
+                    color: var(--yellow);
+                }
+    
+                &::marker {
+                    color: var(--yellow);
+                }
+            }
+        }
+    }
+
     & .faq {
         display: flex;
         align-items: start;
@@ -312,10 +354,7 @@ footer {
     }
 
     & ol {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
+        margin: 1vw 0;
 
         & h1 {
             font-size: 2vw;
@@ -324,8 +363,13 @@ footer {
 
         & li {
             color: #fff;
-            font-size: 1vw;
+            font-size: 1.1vw;
             font-weight: 450;
+
+            & a {
+                color: var(--yellow);
+                text-decoration: 2px underline;
+            }
 
             &::marker {
                 color: var(--yellow);

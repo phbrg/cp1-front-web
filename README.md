@@ -5,6 +5,6 @@ Projeto desenvolvido para a ONG Projeto Pacotinho de Amor em HTML e CSS, com o i
 ## Desenvolvedores
 - Pedro Henrique Batista Bergamin, 559443
 - Rafael Mandel, 60333
-- XXXXX, 99999
-- XXXXX, 99999
-- XXXXX, 99999
+- Luigi Thinego, 560755
+- Felipe Silva, 559848
+- Luis Filipe Crivellaro, 560877
