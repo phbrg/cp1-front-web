@@ -320,6 +320,7 @@ footer {
         height: auto;
 
         & .box {
+            cursor: pointer;
             margin: 1vw 1vw;
             display: flex;
             align-items: center;
@@ -440,5 +441,42 @@ form {
                 color: var(--yellow);
             }
         }
+    }
+}
+
+/* adotei */
+.adotei {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--lpurple);
+
+    & * {
+        margin: 1vw;
+    }
+
+    & h1 {
+        color: var(--yellow);
+    }
+
+    & select {
+        width: 30%;
+        font-size: 1vw;
+        padding: 0.5vw;
+        border-radius: 7px;
+        border: 2px solid rgb(218, 218, 218);
+
+        &:focus {
+            border: 2px solid var(--yellow);
+        }
+    }
+
+    & .saida {
+        font-size: 1.2vw;
+        color: #fff;
     }
 }

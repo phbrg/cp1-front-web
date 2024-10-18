@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +9,56 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
+
 <body>
     <header>
-        <a class="logo" href="home.html">
+        <a class="logo" href="index.html">
             <img src="images/logo.jpeg" alt="logo projeto pacotinho de amor">
             <p>Projeto Pacotinho de Amor</p>
         </a>
 
         <nav>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="sobre.html">Sobre</a>
             <a href="adocao.html">Animais</a>
+            <a href="adotei.html">Adotei e agora?</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
-        <form>
-            <label for="assunto">Assunto:</label>
-            <select name="assunto" id="assunto" >
-                <option value="Elogio">Elogio</option>
-                <option value="Sugestão">Sugestão</option>
-                <option value="Reclamação">Reclamação</option>
-                <option value="Duvida">Dúvida</option>
-            </select>
+    <form>
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+            <option value="adocao">Adoção</option>
+            <option value="comoajudar">Como Ajudar</option>
+            <option value="eventos">Proximos Eventos</option>
+            <option value="sugestoes">Sugestoes</option>
+            <option value="outros">outros</option>
+        </select>
 
-            <label for="Nome">Nome Completo:</label>
-            <input type="text" id="name" name="name" placeholder="Insira seu nome">
-            
-            <label for="Email">Email para contato:</label>
-            <input type="text" id="email" name="email" placeholder="Insira seu Email">
-            
-            <label for="Número">Número para contato:</label>
-            <input type="tel" id="numero" name="numero" placeholder="Insira seu Número">
-            
-            <label for="Mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..." maxlength="500" style="font-family: Rubik; height: 125px;"></textarea>
-            
-            <button>Enviar</button>
-            <div class="links">
-                <a href="https://www.instagram.com/projeto.pacotinhodeamor">📷 Instagram</a>
-                <a href="WA.me/5511999999999">📱 Whatsapp</a>
-            </div>
-        </form>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+
+        <label for="email">Email para contato:</label>
+        <input type="text" id="email" name="email" placeholder="Insira seu Email">
+
+        <label for="numero">Número para contato:</label>
+        <input type="text" id="numero" name="numero" placeholder="Insira seu Número">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..." maxlength="500"
+            style="font-family: Rubik; height: 125px;"></textarea>
+
+        <button id="btn">Enviar</button>
+        <div class="links">
+            <a href="https://www.instagram.com/projeto.pacotinhodeamor">📷 Instagram</a>
+            <a href="WA.me/5511999999999">📱 Whatsapp</a>
+        </div>
+    </form>
     <footer>
         <p class="logo">Projeto Pacotinho de Amor 💜</p>
         <p class="copy">Copyright 2024 © - Projeto Pacotinho de Amor</p>
     </footer>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
